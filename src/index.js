@@ -31,7 +31,7 @@ function cifrar ()
       resultado1[i]=String.fromCharCode(texto[i]);
     }
    // console.log("resultado",resultado1)
-    resultadostring=resultado1.join().replace(/^[,]+|[,]+$|[,]+/g, "");
+    resultadostring=resultado1.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
     document.getElementById("resultadocifrar").value=resultadostring; 
 
 
@@ -58,14 +58,24 @@ function cifrar ()
      {
        asci = infouser.charAt(i).charCodeAt(0);
         if( 64<asci && asci<91) {
+<<<<<<< HEAD
           texto[i] = ((asci - 65 + parseInt(numero)+26) % 26 + 65);
          } else if(asci==65){
           texto[i] = ((asci - 97 + parseInt(numero)+26) % 26 + 97);  
          }else if(96<asci&&asci<123) {
+=======
+          texto[i] = ((asci - 65 - parseInt(numero))+26) % 26 + 65;
+        }
+        
+        else if(96<asci&&asci<123) {
+          texto[i] = ( (asci - 97 - parseInt(numero))+26) % 26 + 97;
+>>>>>>> 3600db9e6087063a283f09a4b1d5d847ce94330e
          //resultado1[i] = String.fromCharCode(texto[i]);
          } else {
          texto[i]=asci;
-         }console.log("texto",texto)
+         }console.log("texto",texto);
+         console.log("asci",asci);
+         
      }
      
      for ( var i=0; i<texto.length; i++) {

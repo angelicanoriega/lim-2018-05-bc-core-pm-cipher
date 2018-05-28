@@ -1,0 +1,43 @@
+#encabezado
+{
+    text-align: center;
+}
+#definicion{
+    margin: 35px;
+}
+.instruciones{
+    margin: 35px;
+}
+#textocif{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+#textodecif{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#BC{
+    margin-left: 500px;
+
+}
+#BD{
+    margin-left: 165px;
+
+}
+#posiciondecifrado{
+    margin-left: 500px;
+
+}
+#posiciondedescifrado{
+    margin-left: 30px;
+
+}
+#resultadocifrar{
+    margin-left: 500px;
+
+}
+#resultadodescifrar{
+    margin-left: 30px;
+
+}
