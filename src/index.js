@@ -58,11 +58,11 @@ function cifrar ()
      {
        asci = infouser.charAt(i).charCodeAt(0);
         if( 64<asci && asci<91) {
-          texto[i] = ((asci - 90 - parseInt(numero))+26) % 26 + 90;
+          texto[i] = ((asci - 65 - parseInt(numero))+26) % 26 + 65;
         }
         
         else if(96<asci&&asci<123) {
-          texto[i] = ( (asci - 122 - parseInt(numero))+26) % 26 + 122;
+          texto[i] = ( (asci - 97 - parseInt(numero))+26) % 26 + 97;
          //resultado1[i] = String.fromCharCode(texto[i]);
          } else {
          texto[i]=asci;

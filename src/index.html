@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /> 
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CIFRADO CESAR</title> 
 </head>
 <body>
 
- <h1>CIFRADO CESAR</h1>
-        Es uno de los primeros métodos de cifrado conocidos históricamente.
-        Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
- </p>
+ <h1 id="encabezado">CIFRADO CESAR</h1>
+        
+  <p id="definicion"> Es uno de los primeros métodos de cifrado conocidos históricamente.
+      Es un tipo de cifrado por sustitución en el que una letra en el texto
+      original es reemplazada por otra letra que se encuentra un número fijo 
+      de posiciones más adelante en el alfabeto.
+  </p>
+  
+   <ul class="Instrucciones"> <h2>Instrucciones de uso:</h2>  
+    <p>Bienvenido en esta pagina te ayudaremos a cifrar y descifrar, segun el metodo de cifrado CESAR </p>  
+    <li>Empecemos por cifrar;Escribe en el cuadro de texto que dice <strong>texto a cifrar</strong> la frase que deseas transformar.</li>
+    <li>En el cuadro de texto que dice <strong>posicion cifrado</strong> escribe un numero que indique cuantas posiciones avanzara al cifrar <br> 
+        un ejemplo seria que a la frace <strong>"ABCD"</strong> le escribieras <strong>1 </strong> en la casilla que dice posicionel
+        resultado saldra <strong>BCDE</strong>, siempre se movera la cantidad que indiques. </li>
+    <li>Has cick en el boton cifrar para ver el resutado en el cuadro abajo de el.</li>
+    <li>Continuamos con descifrado;En el cuadro de texto que dice <strong>texto a descifrar</strong> colocamos el texto que previamente ciframos</li>
+    <li>En el cuadro de texto que dice <strong>posicion decifrado</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
+        un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong>en la casilla que dice posicion decifrado el
+        resultado saldra <strong>ABCD</strong>, siempre se retrocedera la cantidad que indiques.</li>
+    <li>Has cick en el boton decifrar para ver el resutado en el cuadro abajo de el.</li>
+ </ul> 
+ 
 
-    <div id="cifrar">
-     <input type="text" id="textocif" placeholder="texto a cifrar">
-     <button onclick="cifrar()">cifrar</button>
-     <br>
-     <br>
-     <input type="text" id="posiciondecifrado" placeholder="posicion" >
-     <input type="text" id="resultadocifrar">
-     <br>
-     <br>
+    <div id="textcyd">
+        <input type="text" id="textocif" placeholder="texto a cifrar">
+        <input type="text" id="textodecif" placeholder="texto a descifrar">
     </div>
 
-    <div id="descifrar">
-     <input type="text" id="textodecif" placeholder="texto a descifrar">
-     <button onclick="descifrar()">descifrar</button>
-     <br>
-     <br>
-     <input type="text" id="posiciondedescifrado" placeholder="posicion" >
-     <input type="text" id="resultadodescifrar" >
-     <br>
-     <br>
+    <div class="buttoncyd">
+        <button onclick="cifrar()" id="BC">cifrar</button>
+        <button onclick="descifrar()"id="BD">descifrar</button>
     </div>
 
+    <div class="keycyd">
+         <input type="text" id="posiciondecifrado" placeholder="posicion" >
+         <input type="text" id="posiciondedescifrado" placeholder="posicion" >
+    </div>
+
+    <div class="resultcyd">
+     <input type="text" id="resultadocifrar" placeholder="respuesta">
+     <input type="text" id="resultadodescifrar" placeholder="respuesta">
+    </div> 
+
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="index.js"></script>
 </body>
 
