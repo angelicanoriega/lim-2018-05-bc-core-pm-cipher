@@ -9,7 +9,7 @@
     margin: 35px;
 }
 #textocif{
-    margin-left: 500px;
+    margin-left: 300px;
     margin-top: 50px;
 }
 #textodecif{
@@ -18,19 +18,20 @@
 }
 
 #BC{
-    margin-left: 500px;
-
-}
-#BD{
-    margin-left: 165px;
+    margin-left: 300px;
 
 }
 #posiciondecifrado{
-    margin-left: 500px;
+    margin-left: 30px;
 
 }
+#BD{
+    margin-left: 35px;
+
+}
+
 #posiciondedescifrado{
-    margin-left: 30px;
+    margin-left: 40px;
 
 }
 #resultadocifrar{
