@@ -22,11 +22,19 @@
 
 }
 #posiciondecifrado{
+<<<<<<< HEAD
     margin-left: 30px;
 
 }
 #BD{
     margin-left: 35px;
+=======
+    margin-left: 153px;
+
+}
+#BD{
+    margin-left: 300px;
+>>>>>>> cd8fe252d10a54c5143184a96781540d9b15d424
 
 }
 

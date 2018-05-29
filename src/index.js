@@ -1,28 +1,28 @@
 
+
 function cifrar ()
 {
  
    let textociuser= document.getElementById("textocif");
    let posicion= document.getElementById("posiciondecifrado");
-   let respuesta= document.getElementById("resultadocifrar").value;
- 
-    let texto= [];
-    let resultado1= [];
-    let resultadostring="";
-   
-    numero=posicion.value;
-    const infouser =textociuser.value; 
-    
-    let asci;
+   let texto= [];
+   let resultado1= [];
+   let resultadostring="";
+   const infouser =textociuser.value; 
+   let numero=parseInt(posicion.value);
+   let asci;  
     for ( var i=0; i<infouser.length; i++)
     {
       asci = infouser.charAt(i).charCodeAt(0);
       if( 64<asci && asci<91) {
-        texto[i] = (asci - 65 + parseInt(numero)) % 26 + 65;
+        texto[i] = (asci - 65 + numero) % 26 + 65;
       } else if(96<asci&&asci<123) {
-        texto[i]=(asci - 97 + parseInt(numero))%26 +97;
+        texto[i]=(asci - 97 + numero)%26 +97;
         //resultado1[i] = String.fromCharCode(texto[i]);
-      } else {
+      }else if(number=null){
+        resultadostring=infouser;
+      }
+      else {
         texto[i]=asci;
       }
     }
@@ -45,13 +45,12 @@ function cifrar ()
   
     let textuser= document.getElementById("textodecif");
     let posicion= document.getElementById("posiciondedescifrado");
-    let respuesta= document.getElementById("resultadodescifrar").value;
     let texto= [];
     let resultado1= [];
     let resultadostring="";
-    
     const numero=posicion.value;
     const infouser =textuser.value; 
+   
      
     let asci;
     for ( var i=0; i<infouser.length; i++)
