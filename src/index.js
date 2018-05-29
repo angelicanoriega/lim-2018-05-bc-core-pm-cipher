@@ -1,6 +1,6 @@
 
 
-function cipher ()
+/*function cipher ()
 {
  
    const string =document.getElementById("stringcipher").value; 
@@ -18,8 +18,7 @@ function cipher ()
         texto[i] = (encode - 65 + numero) % 26 + 65;
       } else if(96<encode&&encode<123) {
         texto[i]=(encode - 97 + numero)%26 +97;
-      }else if(numero==null){
-      cipher="no pusiste un numero en el cuadro posicion";}
+      }
       else {
         texto[i]=encode;
       }
@@ -48,21 +47,16 @@ function cipher ()
     let decode;
     
      for ( var i=0; i<string .length; i++)
-     {
-
+     { 
        decode = string .charAt(i).charCodeAt(0);
        if( 64<decode && decode<91) {
          texto[i] = (decode - 65 - numero +26) % 26 + 65;
        } else if(96<decode&&decode<123) {
          texto[i]=(decode - 97 - numero +26)%26 +97;
-       asci = infouser.charAt(i).charCodeAt(0);
-        if( 64<asci && asci<91) {
-       }else if(numero==null){
-       decipher="no pusiste un numero en el cuadro posicion";
-       }else {
-         texto[i]=decode;
+       }else{
+        texto[i]=decode;
        }
-     }
+     } console.log(numero);
      
      for ( var i=0; i<texto.length; i++) {
        resultado[i]=String.fromCharCode(texto[i]);
@@ -70,4 +64,22 @@ function cipher ()
    
      decipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
      document.getElementById("decipher").value=decipher; 
-    }}
+    }
+*/
+
+document.getElementById("BC").addEventListener("click",()=>{
+  const string=document.getElementById("stringcipher").value;
+  const offset = document.getElementById("posiciondecifrado").value;
+  const resp=document.getElementById("cipher");
+  resp.value=cipher.encode(offset,string);
+
+
+}
+)
+document.getElementById("BD").addEventListener("click",()=>{
+ const string=document.getElementById("stringdecipher").value;
+ const offset=document.getElementById("posiciondedescifrado").value;
+ const resp=document.getElementById("decipher");
+ resp.value=cipher.decode(offset,string);
+}
+)

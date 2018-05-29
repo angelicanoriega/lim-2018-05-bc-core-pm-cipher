@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
-<head>
+<html>
+ <head>
     <meta charset="utf-8" /> 
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CIFRADO CESAR</title> 
-</head>
-<body>
+ </head>
+ <body>
 
  <h1 id="encabezado">CIFRADO CESAR</h1>
         
@@ -29,17 +29,17 @@
     <li>Has cick en el boton decifrar para ver el resutado en el cuadro abajo de el.</li>
  </ul> 
  
-
+ <div id="cuadros de texto">
     <div id="textcyd">
         <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea>
         <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
     </div>
 
     <div class="buttonkeycyd">
-        <button onclick="encode()" id="BC">cifrar</button> 
-        <input type="text" id="posiciondecifrado" placeholder="posicion" >
-        <button onclick="decipher()"id="BD">descifrar</button>
-        <input type="text" id="posiciondedescifrado" placeholder="posicion" >
+        <button  id="BC">cifrar</button> 
+        <input type="text" id="posiciondecifrado" placeholder="posicion" value="0" >
+        <button id="BD">descifrar</button>
+        <input type="text" id="posiciondedescifrado" placeholder="posicion" value="0">
     </div>
 
     <div class="resultcyd">
@@ -50,6 +50,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="index.js"></script>
     <script src="cipher.js"></script>
-</body>
+</div>
+ </body>
 
 </html>
