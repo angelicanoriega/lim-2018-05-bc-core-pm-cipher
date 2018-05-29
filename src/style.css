@@ -8,37 +8,12 @@
 .instruciones{
     margin: 35px;
 }
-#textocif{
-    margin-left: 300px;
-    margin-top: 50px;
-}
-#textodecif{
-    margin-left: 30px;
-    margin-top: 50px;
-}
-
-#BC{
-    margin-left: 300px;
+#cuadrosdetexto{
+    text-align: center;
 
 }
-#posiciondecifrado{
-    margin-left: 153px;
-
-}
-#BD{
-    margin-left: 300px;
-
-}
-
-#posiciondedescifrado{
-    margin-left: 40px;
-
-}
-#resultadocifrar{
-    margin-left: 500px;
-
-}
-#resultadodescifrar{
-    margin-left: 30px;
-
-}
+body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  

@@ -1,12 +1,11 @@
 window.cipher = {
-   encode: cipher => {
-    const string =document.getElementById("stringcipher").value; 
-    let posicion= document.getElementById("posiciondecifrado");
+   encode:(offset,string) => {
+    
     let texto= [];
     let resultado= [];
     let cipher="";
    
-    let numero=parseInt(posicion.value);
+    let numero=parseInt(offset);
     let encode;  
      for ( var i=0; i<string .length; i++)
      {
@@ -15,51 +14,37 @@ window.cipher = {
          texto[i] = (encode - 65 + numero) % 26 + 65;
        } else if(96<encode&&encode<123) {
          texto[i]=(encode - 97 + numero)%26 +97;
-       }else if(numero==null){
-       decipher="no pusiste un numero en el cuadro posicion";}
-       else {
+       }else {
          texto[i]=encode;
-       }
-     }
-     
-     for ( var i=0; i<texto.length; i++) {
-       resultado[i]=String.fromCharCode(texto[i]);
+       }resultado[i]=String.fromCharCode(texto[i]);
      }
    
-     cipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
-     document.getElementById("cipher").value=cipher; 
-   }, 
-   decode: decipher => {
-    const string =document.getElementById("stringdecipher").value; 
-    let posicion= document.getElementById("posiciondedescifrado");
+    cipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
+     return cipher;
+   },
+   decode:(offset,string) => {
+    
     let texto= [];
     let resultado= [];
     let decipher="";
    
-    let numero=parseInt(posicion.value);
-    let decode;
-    
+    let numero=parseInt(offset);
+    let encode;  
      for ( var i=0; i<string .length; i++)
      {
-       decode = string .charAt(i).charCodeAt(0);
-       if( 64<decode && decode<91) {
-         texto[i] = (decode - 65 - numero +26) % 26 + 65;
-       } else if(96<decode&&decode<123) {
-         texto[i]=(decode - 97 - numero +26)%26 +97;
-         //resultado1[i] = String.fromCharCode(texto[i]);
-       }else if(numero==null){
-       decipher="no pusiste un numero en el cuadro posicion";
+       encode = string .charAt(i).charCodeAt(0);
+       if( 64<encode && encode<91) {
+         texto[i] = (encode - 90 - numero+26) % 26 + 90;
+       } else if(96<encode&&encode<123) {
+         texto[i]=(encode - 122 - numero+26)%26 +122;
        }else {
-         texto[i]=decode;
-       }
+         texto[i]=encode;
+       }resultado[i]=String.fromCharCode(texto[i]);
      }
      
-     for ( var i=0; i<texto.length; i++) {
-       resultado[i]=String.fromCharCode(texto[i]);
-     }
+     
    
-     decipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
-     document.getElementById("decipher").value=decipher; 
+    decipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
+     return decipher;
    }
-
   }
