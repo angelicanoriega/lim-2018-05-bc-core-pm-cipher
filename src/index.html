@@ -31,24 +31,25 @@
  
 
     <div id="textcyd">
-        <textarea  id="textocif" placeholder="texto a cifrar" rows="5" cols="50" ></textarea>
-        <textarea  id="textodecif" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
+        <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea>
+        <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
     </div>
 
     <div class="buttonkeycyd">
-        <button onclick="cifrar()" id="BC">cifrar</button> 
+        <button onclick="encode()" id="BC">cifrar</button> 
         <input type="text" id="posiciondecifrado" placeholder="posicion" >
-        <button onclick="descifrar()"id="BD">descifrar</button>
+        <button onclick="decipher()"id="BD">descifrar</button>
         <input type="text" id="posiciondedescifrado" placeholder="posicion" >
     </div>
 
     <div class="resultcyd">
-     <textarea  id="resultadocifrar" placeholder="respuesta"></textarea>
-     <textarea type="text" id="resultadodescifrar" placeholder="respuesta"></textarea>
+     <textarea  id="cipher" placeholder="respuesta"></textarea>
+     <textarea  id="decipher" placeholder="respuesta"></textarea>
     </div> 
 
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="index.js"></script>
+    <script src="cipher.js"></script>
 </body>
 
 </html>
