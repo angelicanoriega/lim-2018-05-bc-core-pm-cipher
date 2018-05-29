@@ -19,7 +19,7 @@ function cipher ()
       } else if(96<encode&&encode<123) {
         texto[i]=(encode - 97 + numero)%26 +97;
       }else if(numero==null){
-      decipher="no pusiste un numero en el cuadro posicion";}
+      cipher="no pusiste un numero en el cuadro posicion";}
       else {
         texto[i]=encode;
       }
@@ -49,12 +49,14 @@ function cipher ()
     
      for ( var i=0; i<string .length; i++)
      {
+
        decode = string .charAt(i).charCodeAt(0);
        if( 64<decode && decode<91) {
          texto[i] = (decode - 65 - numero +26) % 26 + 65;
        } else if(96<decode&&decode<123) {
          texto[i]=(decode - 97 - numero +26)%26 +97;
-         //resultado1[i] = String.fromCharCode(texto[i]);
+       asci = infouser.charAt(i).charCodeAt(0);
+        if( 64<asci && asci<91) {
        }else if(numero==null){
        decipher="no pusiste un numero en el cuadro posicion";
        }else {
@@ -68,5 +70,4 @@ function cipher ()
    
      decipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
      document.getElementById("decipher").value=decipher; 
-  } 
- 
+    }}
