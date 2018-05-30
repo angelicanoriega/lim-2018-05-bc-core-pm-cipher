@@ -1,0 +1,15 @@
+#introduccion{
+    text-align: center;
+}
+#Instrucciones{
+    text-align: left;
+    margin: 2%;
+
+}
+#Instrucciones h3{
+    text-align: center;
+}
+#Instrucciones .lista{
+    margin-left: 1%;
+    
+}
