@@ -56,30 +56,39 @@
           <li>Has cick en el boton decifrar para ver el resutado en el cuadro abajo de el.</li>
          </ol> 
         </section>
-        <div id="cuadros de texto">
-          <div id="textcyd">
-              <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea>
-              <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
-          </div>
+
+        
+        
+        <section id="Cyd">
+             <div class="contenedor1">
+                 <div><textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea> </div>
+                 <div><button  id="BC">cifrar</button> </div>
+                 <div> <input type="text" id="posiciondecifrado" placeholder="posicion" value="0" ></div>
+                 <div><textarea  id="cipher" placeholder="respuesta"></textarea></div>
+               </div>
+             <div class="contenedor2">
+              <div><textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea></div>
+              <div><button id="BD">descifrar</button></div>
+              <div><input type="text" id="posiciondedescifrado" placeholder="posicion" value="0"></div>
+              <div><textarea  id="decipher" placeholder="respuesta"></textarea></div>
+             </div>
+        </section> 
       
-          <div class="buttonkeycyd">
-              <button  id="BC">cifrar</button> 
-              <input type="text" id="posiciondecifrado" placeholder="posicion" value="0" >
-              <button id="BD">descifrar</button>
-              <input type="text" id="posiciondedescifrado" placeholder="posicion" value="0">
-          </div>
-      
-          <div class="resultcyd">
-           <textarea  id="cipher" placeholder="respuesta"></textarea>
-           <textarea  id="decipher" placeholder="respuesta"></textarea>
-          </div> 
+          
+              
+              
+              
+          
+              
+         
+          
       
         
           <script src="index.js"></script>
           <script src="cipher.js"></script>
-         </div>
+         
 
-        </section>
+       
    </main>
  
  </body>
