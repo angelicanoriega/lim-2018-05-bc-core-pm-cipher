@@ -19,7 +19,7 @@ window.cipher = {
        }resultado[i]=String.fromCharCode(texto[i]);
      }
    
-    cipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
+    cipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");
      return cipher;
    },
    decode:(offset,string) => {
@@ -34,9 +34,9 @@ window.cipher = {
      {
        encode = string .charAt(i).charCodeAt(0);
        if( 64<encode && encode<91) {
-         texto[i] = (encode - 90 - numero+26) % 26 + 90;
+         texto[i] = (encode - 65 - numero +26) % 26 + 65;
        } else if(96<encode&&encode<123) {
-         texto[i]=(encode - 122 - numero+26)%26 +122;
+         texto[i]=(encode-97-numero+26)%26+97;
        }else {
          texto[i]=encode;
        }resultado[i]=String.fromCharCode(texto[i]);

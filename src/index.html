@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" /> 
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CIFRADO CESAR</title> 
@@ -22,19 +23,19 @@
 
    <main>
        <section id="imagen">
-          <img src="css/imagenes/Criptografia.png">
+          <img src="css/imagenes/Cifrado02.png">
           <div class="contenedor">
           <h2>Cifrar y/o Descifrar</h2>
-          <p>El mensaje sera un secreto, al menos que quieras lo contrario</p>
+          <p>"El mensaje sera un secreto, al menos que quieras lo contrario"</p>
           </div>
         </section> 
 
         <section id="introduccion">
         <div class="cuadro">
-          <h3>Bienvenido</h3>  
-          <p>En esta pagina te ayudaremos a cifrar y descifrar, segun el metodo de cifrado CESAR</p>
-          <p>Cifrado Cesar es uno de los primeros métodos de cifrado conocidos históricamente.
-            Es un tipo de cifrado por sustitución en el que una letra en el texto
+          <h3>¡ Bienvenido !</h3>  
+          <br>
+          <p>En esta pagina te ayudaremos a cifrar y descifrar, según el metodo de Cifrado Cesar</p>
+          <p>Cifrado Cesar es un tipo de cifrado por sustitución en el que una letra en el texto
             original es reemplazada por otra letra que se encuentra un número fijo 
             de posiciones más adelante en el alfabeto.
           </p>
@@ -44,19 +45,18 @@
         <section id="Instrucciones">
         <div class="cuadro">
          <h3>Instrucciones de uso:</h3>  
-           
-          <p>Empecemos por cifrar;Escribe en el cuadro de texto que dice <strong>texto a cifrar</strong> la frase que deseas transformar.</p>
           <br>
           <ol class="lista">
-          <li>En el cuadro de texto que dice <strong>posicion cifrado</strong> escribe un numero que indique cuantas posiciones avanzara al cifrar <br> 
-              un ejemplo seria que a la frace <strong>"ABCD"</strong> le escribieras <strong>1 </strong> en la casilla que dice posicionel
-              resultado saldra <strong>BCDE</strong>, siempre se movera la cantidad que indiques. </li>
-          <li>Has cick en el boton cifrar para ver el resutado en el cuadro abajo de el.</li>
-          <li>Continuamos con descifrado;En el cuadro de texto que dice <strong>texto a descifrar</strong> colocamos el texto que previamente ciframos</li>
-          <li>En el cuadro de texto que dice <strong>posicion decifrado</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
-              un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong>en la casilla que dice posicion decifrado el
+          <li>Escribe en el cuadro de texto  <strong>Introduzca el texto a cifrar:</strong> la frase que deseas cifrar.</li>
+          <li>En el cuadro de texto  <strong>Introduzca un número para el cifrado:</strong> escribe un número que indique cuantas posiciones avanzara al cifrar <br> 
+              un ejemplo seria que a la frace <strong>"ABCD"</strong> le escribieras <strong>1 </strong> en la casilla "Introduzca un número para el cifrado:"
+              el resultado saldra <strong>BCDE</strong>, siempre se movera la cantidad que indiques. </li>
+          <li>Has cick en el botón <strong>cifrar</strong>.</li>
+          <li>En el cuadro de texto  <strong>Introduzca el texo a descifrar:</strong> colocamos el texto que previamente ciframos</li>
+          <li>En el cuadro de texto  <strong>Introduzca un número para el decifrado:</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
+              un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong> "Introduzca un número para el decifrado:" el
               resultado saldra <strong>ABCD</strong>, siempre se retrocedera la cantidad que indiques.</li>
-          <li>Has cick en el boton decifrar para ver el resutado en el cuadro abajo de el.</li>
+          <li>Has cick en el botón  <strong>decifrar</strong></li>
          </ol> 
         </div>
         </section>
@@ -69,13 +69,13 @@
                  <br>
                  <div>
                   <label for="msg">Introduzca el texto a cifrar:</label><br>
-                  <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea>
+                  <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50"></textarea>
                  </div>
-                 <div>
+                 <div class="boton">
                    <button  id="BC">cifrar</button> 
                  </div>
                  <div>
-                    <label for="msg">Introduzca u numero para el cifrado:</label><br>
+                    <label for="msg">Introduzca un numero para el cifrado:</label><br>
                     <input type="number" id="posiciondecifrado" placeholder="posicion" value="0" min="0">
                  </div>
                  <div>
@@ -92,16 +92,18 @@
                <label for="msg">Introduzca el texo a descifrar:</label><br>
                 <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
               </div>
-              <div class="cb">
+              
+              <div class="boton">
                 <button id="BD">descifrar</button>
               </div>
               <div class="tn">
-                <label for="msg">Introduzca u numero para el decifrado:</label><br>
+                <label for="msg">Introduzca un numero para el decifrado:</label><br>
                 <input type="number" id="posiciondedescifrado" placeholder="posicion" value="0" min="0">
               </div>
+              
               <div class="tr">
               <label for="msg">texto cifrado:</label><br>
-               <textarea  id="decipher" placeholder="respuesta"rows="5" cols="50"></textarea>
+               <textarea  id="decipher" placeholder="respuesta" rows="5" cols="50"></textarea>
               </div>
               
            <br>
