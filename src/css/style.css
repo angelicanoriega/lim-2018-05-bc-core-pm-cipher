@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url(menu.css);
 @import url(imagen.css);
 @import url(introduccion.css);
@@ -9,9 +9,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    	
+
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+     font-family: 'Roboto Condensed', sans-serif;
+    
+    background:rgba(156,156,156, 0.5);
+    
 }
 header {
     width: 100%;
@@ -24,7 +29,7 @@ header {
     z-index: 100;
 }
 .contenedor {
-    width: 98%;
+    width: 97%;
 
     margin: auto;
 
@@ -41,9 +46,9 @@ width: 100%;
 margin-bottom: 100%,
 }
 .cuadro{
-    width: 98%;
+    width: 97%;
     height:50% ;
-    border:3px solid #000;
+    border:3px ;
     text-align: center;
     margin:auto;
     margin-top: 50px;
