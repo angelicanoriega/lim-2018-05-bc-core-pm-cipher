@@ -60,30 +60,51 @@
         
         
         <section id="Cyd">
+          <div>
              <div class="contenedor1">
-                 <div><textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea> </div>
-                 <div><button  id="BC">cifrar</button> </div>
-                 <div> <input type="text" id="posiciondecifrado" placeholder="posicion" value="0" ></div>
-                 <div><textarea  id="cipher" placeholder="respuesta"></textarea></div>
-               </div>
-             <div class="contenedor2">
-              <div><textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea></div>
-              <div><button id="BD">descifrar</button></div>
-              <div><input type="text" id="posiciondedescifrado" placeholder="posicion" value="0"></div>
-              <div><textarea  id="decipher" placeholder="respuesta"></textarea></div>
+                 <br>
+                 <div>
+                  <label for="msg">Introduzca el texto a cifrar:</label><br>
+                  <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50" ></textarea>
+                 </div>
+                 <div>
+                   <button  id="BC">cifrar</button> 
+                 </div>
+                 <div>
+                    <label for="msg">Introduzca u numero para el cifrado:</label><br>
+                    <input type="number" id="posiciondecifrado" placeholder="posicion" value="0" min="0">
+                 </div>
+                 <div>
+                   <label for="msg">texto cifrado:</label><br>
+                   <textarea  id="cipher" placeholder="respuesta" rows="5" cols="50"></textarea>
+                 <br>
+                </div>
              </div>
+          
+
+           <div class="contenedor2">
+              <br>
+              <div class="tc">
+               <label for="msg">Introduzca el texo a descifrar:</label><br>
+                <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
+              </div>
+              <div class="cb">
+                <button id="BD">descifrar</button>
+              </div>
+              <div class="tn">
+                <label for="msg">Introduzca u numero para el decifrado:</label><br>
+                <input type="number" id="posiciondedescifrado" placeholder="posicion" value="0" min="0">
+              </div>
+              <div class="tr">
+              <label for="msg">texto cifrado:</label><br>
+               <textarea  id="decipher" placeholder="respuesta"rows="5" cols="50"></textarea>
+              </div>
+              
+           <br>
+          </div>
+          </div>
         </section> 
-      
-          
-              
-              
-              
-          
-              
-         
-          
-      
-        
+
           <script src="index.js"></script>
           <script src="cipher.js"></script>
          

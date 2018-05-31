@@ -1,0 +1,36 @@
+.contenedor1{
+    width: 800px;
+    height:300px ;
+    border:3px solid;
+    text-align: center;
+    margin:auto;
+   
+
+}
+
+.contenedor2{
+    width: 800px;
+    height:300px ;
+    border:3px solid;
+    text-align: center;
+    margin:auto;
+    margin-top: 50px;
+    
+}
+
+input, textarea {
+
+	color: #000;
+	background-color: 	#4077C9;
+	border: none;
+	border-radius: 10px;
+	display: block;
+	margin:auto;
+	padding: px;    
+	text-align: center;
+	
+}
+textarea{
+    width:80%;
+   
+}
