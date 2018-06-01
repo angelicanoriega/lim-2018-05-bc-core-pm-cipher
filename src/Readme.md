@@ -25,11 +25,7 @@ Por ejemplo si usáramos un desplazamiento de 3:
 
 ## Quiénes son los principales usuarios de producto?
 
-<<<<<<< HEAD
  Los usuarios son el publico en general pero en la pagina web se enfoca en la facilidd de uso .
-=======
- Los usuarios son el publico en general pero en la pagina web se enfoca en la facilidd de uso para los adultos mayores.
->>>>>>> 1aca4a6b35c2efa170751d2c4549697c6479c1dd
 
 
 ## Cuáles son los objetivos de estos usuarios en relación con el producto?
