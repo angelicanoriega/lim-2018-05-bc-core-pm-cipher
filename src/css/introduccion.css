@@ -15,7 +15,14 @@
 #Instrucciones h3{
     text-align: center;
 }
+#Instrucciones2 h3{
+    text-align: center;
+}
 #Instrucciones .lista{
+    margin-left: 4%;
+    text-align: left;
+}
+#Instrucciones2 .lista{
     margin-left: 4%;
     text-align: left;
 }

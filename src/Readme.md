@@ -25,14 +25,15 @@ Por ejemplo si usáramos un desplazamiento de 3:
 
 ## Quiénes son los principales usuarios de producto?
 
-Son personas con la necesidad de mantener mas segura su informacion con un cifrado que ellos pueden crear.
+ Los usuarios son el publico en general pero en la pagina web se enfoca en la facilidd de uso .
+
 
 ## Cuáles son los objetivos de estos usuarios en relación con el producto?
 
 Lograr cifrar y descifrar una cadena de letras para ellos .
 
 ## Cómo crees que el producto que estás creando les está resolviendo sus problemas?
-si; debido al hecho de que las posiciones que avance o retroceda la cadena de letras solo lo sabra el creador del mensaje inicial.
+Debido al hecho de que las posiciones que avance o retroceda la cadena de letras solo lo sabra el creador del mensaje inicial.
 
 ## Link de producto:https://angelicanoriega.github.io/lim-2018-05-bc-core-pm-cipher/src/
 
