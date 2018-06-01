@@ -34,9 +34,9 @@ window.cipher = {
      {
        encode = string .charAt(i).charCodeAt(0);
        if( 64<encode && encode<91) {
-         texto[i] = (encode - 65 - numero +26) % 26 + 65;
+         texto[i] = (encode - 65 - (numero%26) +26) % 26 + 65;
        } else if(96<encode&&encode<123) {
-         texto[i]=(encode-97-numero+26)%26+97;
+         texto[i]=(encode-97-(numero%26)+26)%26+97;
        }else {
          texto[i]=encode;
        }resultado[i]=String.fromCharCode(texto[i]);

@@ -1,5 +1,5 @@
 #Cyd .contenedor{
-    width: 98%;
+    width: 97%;
     height:50% ;
     border:3px solid #000;
     text-align: center;
@@ -12,16 +12,30 @@
 input, textarea {
 
 	color: #000;
-	background-color: 	#fff;
+	
 	border: none;
 	border-radius: 10px;
 	display: block;
 	margin:auto;
 	padding: px;    
 	text-align: center;
-	
+	background:rgba(156,156,156, 0.5);
+	margin-bottom:10px;
 }
 textarea{
     width:80%;
    
 }
+#BC, #BD{
+	color: #fff;
+	border-radius: 10px;
+	background-color: #333;
+	display:block;
+	width:20%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  margin-top:20px;
+   margin-bottom:20px
+}
+

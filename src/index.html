@@ -23,15 +23,15 @@
 
    <main>
        <section id="imagen">
-          <img src="css/imagenes/Cifrado02.png">
+          <img src="css/imagenes/imag.jpg">
           <div class="contenedor">
           <h2>Cifrar y/o Descifrar</h2>
           <p>"El mensaje sera un secreto, al menos que quieras lo contrario"</p>
           </div>
         </section> 
-
+    </main>
         <section id="introduccion">
-        <div class="cuadro">
+        <div class="cuadro1">
           <h3>¡ Bienvenido !</h3>  
           <br>
           <p>En esta pagina te ayudaremos a cifrar y descifrar, según el metodo de Cifrado Cesar</p>
@@ -43,8 +43,8 @@
         </section>
 
         <section id="Instrucciones">
-        <div class="cuadro">
-         <h3>Instrucciones de uso:</h3>  
+        <div class="cuadro2">
+         <h3>Instrucciones de uso (Cifrado):</h3>  
           <br>
           <ol class="lista">
           <li>Escribe en el cuadro de texto  <strong>Introduzca el texto a cifrar:</strong> la frase que deseas cifrar.</li>
@@ -52,11 +52,6 @@
               un ejemplo seria que a la frace <strong>"ABCD"</strong> le escribieras <strong>1 </strong> en la casilla "Introduzca un número para el cifrado:"
               el resultado saldra <strong>BCDE</strong>, siempre se movera la cantidad que indiques. </li>
           <li>Has cick en el botón <strong>cifrar</strong>.</li>
-          <li>En el cuadro de texto  <strong>Introduzca el texo a descifrar:</strong> colocamos el texto que previamente ciframos</li>
-          <li>En el cuadro de texto  <strong>Introduzca un número para el decifrado:</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
-              un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong> "Introduzca un número para el decifrado:" el
-              resultado saldra <strong>ABCD</strong>, siempre se retrocedera la cantidad que indiques.</li>
-          <li>Has cick en el botón  <strong>decifrar</strong></li>
          </ol> 
         </div>
         </section>
@@ -71,12 +66,12 @@
                   <label for="msg">Introduzca el texto a cifrar:</label><br>
                   <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50"></textarea>
                  </div>
-                 <div class="boton">
-                   <button  id="BC">cifrar</button> 
-                 </div>
                  <div>
                     <label for="msg">Introduzca un numero para el cifrado:</label><br>
                     <input type="number" id="posiciondecifrado" placeholder="posicion" value="0" min="0">
+                 </div>
+                 <div class="boton">
+                   <button  id="BC">cifrar</button> 
                  </div>
                  <div>
                    <label for="msg">texto cifrado:</label><br>
@@ -84,7 +79,20 @@
                  <br>
                 </div>
              </div>
-          
+
+      <section id="Instrucciones">
+        <div class="cuadro2">
+         <h3>Instrucciones de uso (Descifrado):</h3>  
+          <br>
+          <ol class="lista">
+          <li>En el cuadro de texto  <strong>Introduzca el texo a descifrar:</strong> colocamos el texto que previamente ciframos</li>
+          <li>En el cuadro de texto  <strong>Introduzca un número para el decifrado:</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
+              un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong> "Introduzca un número para el decifrado:" el
+              resultado saldra <strong>ABCD</strong>, siempre se retrocedera la cantidad que indiques.</li>
+          <li>Has cick en el botón  <strong>decifrar</strong></li>
+         </ol> 
+        </div>
+        </section>
 
            <div class="contenedor">
               <br>
@@ -92,15 +100,13 @@
                <label for="msg">Introduzca el texo a descifrar:</label><br>
                 <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
               </div>
-              
-              <div class="boton">
-                <button id="BD">descifrar</button>
-              </div>
               <div class="tn">
                 <label for="msg">Introduzca un numero para el decifrado:</label><br>
                 <input type="number" id="posiciondedescifrado" placeholder="posicion" value="0" min="0">
               </div>
-              
+              <div class="boton">
+                <button id="BD">descifrar</button>
+              </div>
               <div class="tr">
               <label for="msg">texto cifrado:</label><br>
                <textarea  id="decipher" placeholder="respuesta" rows="5" cols="50"></textarea>
@@ -113,10 +119,11 @@
 
           <script src="index.js"></script>
           <script src="cipher.js"></script>
-         
 
-       
-   </main>
+    <footer>
+      <div class="icon-cifrar">Gracias por participar</div>
+    </footer>
+
  
  </body>
 
