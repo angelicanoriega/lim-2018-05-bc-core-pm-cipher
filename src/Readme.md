@@ -25,7 +25,8 @@ Por ejemplo si usáramos un desplazamiento de 3:
 
 ## Quiénes son los principales usuarios de producto?
 
-Son personas con la necesidad de mantener mas segura su informacion con un cifrado que ellos pueden crear.
+ Los usuarios son el publico en general pero en la pagina web se enfoca en la facilidd de uso para los adultos mayores.
+
 
 ## Cuáles son los objetivos de estos usuarios en relación con el producto?
 
