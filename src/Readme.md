@@ -46,7 +46,7 @@ El diseño inicial se compone de una difinicion de lo que es Cifrado Cesar, junt
 
 ## Cambios de diseño:
 
-los cuadros versticales se cambiaron a horizontales por la vista en responsive.
+los cuadros verticales se cambiaron a horizontales por la vista en responsive.
 
 Se considero convertir los 4 cuadros de texto en solo 2, pero en un feedback con usuarios de dio a entender que era mas entendible con 4.
 
