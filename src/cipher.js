@@ -41,10 +41,10 @@ window.cipher = {
          texto[i]=encode;
        }resultado[i]=String.fromCharCode(texto[i]);
      }
-     
-     
-   
+
     decipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
      return decipher;
    }
+  
+  
   }
