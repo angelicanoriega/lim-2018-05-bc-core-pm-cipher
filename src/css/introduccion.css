@@ -20,10 +20,11 @@
     text-align: center;
 }
 #Instrucciones .lista{
-    margin-left: 4%;
+   width: 90%;
     text-align: left;
 }
 #Instrucciones2 .lista{
-    margin-left: 4%;
+    
+    width: 90%;
     text-align: left;
 }
