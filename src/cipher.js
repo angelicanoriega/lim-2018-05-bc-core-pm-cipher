@@ -44,7 +44,18 @@ window.cipher = {
 
     decipher=resultado.join().replace(/^[,]+|[,]+$|[,]+/g, "");// ver coma
      return decipher;
-   }
-  
-  
-  }
+   },
+   createCipherWithOffset: (offset) => 
+   { 
+    return{
+            encode: (string) => 
+            {
+            return cipher.encode(offset, string);
+            },
+            decode: (string) => 
+            {
+            return cipher.decode(offset, string);
+            }
+          }
+    }  
+  };
