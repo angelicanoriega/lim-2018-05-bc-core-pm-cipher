@@ -5,7 +5,7 @@ window.cipher = {
     let resultado= [];
     let cipher="";
    
-    let numero=parseInt(offset);
+    let numero=parseInt(offset)%26;
     let encode;  
      for ( var i=0; i<string .length; i++)
      {

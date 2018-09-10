@@ -5,124 +5,103 @@
     <meta charset="utf-8" /> 
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CIFRADO CESAR</title> 
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css"> -->
  </head>
  <body>
-   <header>
-       <div class="contenedor">
-         <h1 class="icon-cifrar">CIFRADO CESAR</h1>
-         <input type="checkbox" id="menu-bar">
-         <label class="icon-lista" for="menu-bar"></label>
-         <nav class="menu">  
-            <a href="https://youtu.be/9oGHiEvrTxQ" target="_blank">¿Que es cifrado Cesar?</a>
-         </nav>
-       </div>
-   </header> 
+<section id="introduccion">
+  <div class="center">
+  <div class="text">
+    <h3>CIFRADO CESAR</h3> 
+    <h3>¡ Bienvenido !</h3>  
+    <p>En esta pagina te ayudaremos a cifrar y descifrar, según el metodo de Cifrado Cesar</p>
+    <p>Cifrado Cesar es un tipo de cifrado por sustitución en el que una letra en el texto
+    original es reemplazada por otra letra que se encuentra un número fijo 
+    de posiciones más adelante en el alfabeto.
+    </p>
+  </div> 
+    <div >
+      <input type="button"  class="Btn" id="Cf" value="Cifrar">
+      <input type="button" class="Btn" id="Df"value="Descifrar">
+    </div>
+  </div> 
+</section>
 
-   <main>
-       <section id="imagen">
-          <img src="css/imagenes/imag.jpg">
-          <div class="contenedor">
-          <h2>Cifrar y/o Descifrar</h2>
-          </div>
-        </section> 
-    </main>
-        <section id="introduccion">
-        <div class="cuadro1">
-          <h3>¡ Bienvenido !</h3>  
-          <br>
-          <p>En esta pagina te ayudaremos a cifrar y descifrar, según el metodo de Cifrado Cesar</p>
-          <p>Cifrado Cesar es un tipo de cifrado por sustitución en el que una letra en el texto
-            original es reemplazada por otra letra que se encuentra un número fijo 
-            de posiciones más adelante en el alfabeto.
-          </p>
-        </div> 
-        </section>
+<section id="Cifrar" class="hide">
+<div  class="center" >  
+<div>
+  <input id="Btn" class="Btn" type="button" value="Instrucciones">
+</div>
+<div id="text" class="hide">
+  <h3>Instrucciones de uso (Cifrado):</h3>  
+  <ol class="lista">
+  <li>Escribe en el cuadro de texto  <strong>Introduzca el texto a cifrar:</strong> la frase que deseas cifrar.</li>
+  <li>En el cuadro de texto  <strong>Introduzca un número para el cifrado:</strong> escribe un número que indique cuantas posiciones avanzara al cifrar <br> 
+  un ejemplo seria que a la frace <strong>"ABCD"</strong> le escribieras <strong>1 </strong> en la casilla "Introduzca un número para el cifrado:"
+  el resultado saldra <strong>BCDE</strong>, siempre se movera la cantidad que indiques. </li>
+  <li>Has cick en el botón <strong>cifrar</strong>.</li>
+  </ol> 
+  <input id="BtnClose" class="Btn" type="button" value="Cerrar Instrucciones">
+</div>
+<br>
+<div>
+  <label for="msg">Introduzca el texto a cifrar:</label><br>
+  <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50"></textarea>
+</div>
+<div>
+  <label for="msg">Introduzca un numero para el cifrado:</label><br>
+  <input type="number" id="posiciondecifrado" placeholder="posicion" value="0" min="0">
+</div>
+<div class="boton">
+  <button  id="BC" class="Btncf">cifrar</button> 
+</div>
+<div>
+  <label for="msg">texto cifrado:</label><br>
+  <textarea  id="cipher" placeholder="respuesta" rows="5" cols="50"  ></textarea>
+<br>
+</div>
+<input id="return" class="Btn" type="button" value="regresar">
+</div>
+</section>   
 
-        <section id="Instrucciones">
-        <div class="cuadro2">
-         <h3>Instrucciones de uso (Cifrado):</h3>  
-          <br>
-          <ol class="lista">
-          <li>Escribe en el cuadro de texto  <strong>Introduzca el texto a cifrar:</strong> la frase que deseas cifrar.</li>
-          <li>En el cuadro de texto  <strong>Introduzca un número para el cifrado:</strong> escribe un número que indique cuantas posiciones avanzara al cifrar <br> 
-              un ejemplo seria que a la frace <strong>"ABCD"</strong> le escribieras <strong>1 </strong> en la casilla "Introduzca un número para el cifrado:"
-              el resultado saldra <strong>BCDE</strong>, siempre se movera la cantidad que indiques. </li>
-          <li>Has cick en el botón <strong>cifrar</strong>.</li>
-         </ol> 
-        </div>
-        </section>
-
-        
-        
-        <section id="Cyd">
-          <div>
-             <div class="contenedor">
-                 <br>
-                 <div>
-                  <label for="msg">Introduzca el texto a cifrar:</label><br>
-                  <textarea  id="stringcipher" placeholder="texto a cifrar" rows="5" cols="50"></textarea>
-                 </div>
-                 <div>
-                    <label for="msg">Introduzca un numero para el cifrado:</label><br>
-                    <input type="number" id="posiciondecifrado" placeholder="posicion" value="0" min="0">
-                 </div>
-                 <div class="boton">
-                   <button  id="BC">cifrar</button> 
-                 </div>
-                 <div>
-                   <label for="msg">texto cifrado:</label><br>
-                   <textarea  id="cipher" placeholder="respuesta" rows="5" cols="50"  ></textarea>
-                 <br>
-                </div>
-             </div>
-
-      <section  id="Instrucciones2">
-        <div class="cuadro2">
-         <h3>Instrucciones de uso (Descifrado):</h3>  
-          <br>
-          <ol class="lista">
-          <li>En el cuadro de texto  <strong>Introduzca el texo a descifrar:</strong> colocamos el texto que previamente ciframos</li>
-          <li>En el cuadro de texto  <strong>Introduzca un número para el decifrado:</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
-              un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong> en el cuadro "Introduzca un número para el decifrado:" el
-              resultado saldra <strong>ABCD</strong>, siempre se retrocedera la cantidad que indiques.</li>
-          <li>Has cick en el botón  <strong>decifrar</strong></li>
-         </ol> 
-        </div>
-      </section>
-
-           <div class="contenedor">
-              <br>
-              <div class="tc">
-               <label for="msg">Introduzca el texo a descifrar:</label><br>
-                <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
-              </div>
-              <div class="tn">
-                <label for="msg">Introduzca un numero para el decifrado:</label><br>
-                <input type="number" id="posiciondedescifrado" placeholder="posicion" value="0" min="0">
-              </div>
-              <div class="boton">
-                <button id="BD">descifrar</button>
-              </div>
-              <div class="tr">
-              <label for="msg">texto cifrado:</label><br>
-               <textarea  id="decipher" placeholder="respuesta" rows="5" cols="50" ></textarea>
-              </div>
-              
-           <br>
-          </div>
-          </div>
-        </section> 
-
-          <script src="index.js"></script>
-          <script src="cipher.js"></script>
-
-    <footer>
-      <div >Gracias por participar</div>
-    </footer>
-
- 
+<section  id="Descifrar" class="hide">
+<div  class="center">  
+  <div>
+   <input id="Btn2" class="Btn" type="button" value="Instrucciones">
+  </div>
+  <div id="text2" class="hide">
+    <h3>Instrucciones de uso (Descifrado):</h3>  
+    <ol class="lista">
+    <li>En el cuadro de texto  <strong>Introduzca el texo a descifrar:</strong> colocamos el texto que previamente ciframos</li>
+    <li>En el cuadro de texto  <strong>Introduzca un número para el decifrado:</strong> escribe un numero que indique cuantas posiciones retrocedera al decifrar <br> 
+    un ejemplo seria que a la frace <strong>"BCDE"</strong> le escribieras <strong>1 </strong> en el cuadro "Introduzca un número para el decifrado:" el
+    resultado saldra <strong>ABCD</strong>, siempre se retrocedera la cantidad que indiques.</li>
+    <li>Has cick en el botón  <strong>decifrar</strong></li>
+    </ol> 
+    <input id="BtnClose2" class="Btn" type="button" value="Cerrar Instrucciones">
+  </div>
+  <br>
+  <div >
+    <label for="msg">Introduzca el texo a descifrar:</label><br>
+    <textarea  id="stringdecipher" placeholder="texto a descifrar" rows="5" cols="50"></textarea>
+  </div>
+  <div >
+    <label for="msg">Introduzca un numero para el decifrado:</label><br>
+    <input type="number" id="posiciondedescifrado" placeholder="posicion" value="0" min="0">
+  </div>
+  <div >
+    <button id="BD" class="Btncf" >descifrar</button>
+  </div>
+  <div class="tr">
+   <label for="msg">texto cifrado:</label><br>
+   <textarea  id="decipher" placeholder="respuesta" rows="5" cols="50" ></textarea>
+  </div>
+  <input id="return2" href="#" class="Btn" type="button" value="regresar">
+</div>
+</div>
+</section> 
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
  </body>
-
 </html>
